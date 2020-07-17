@@ -374,7 +374,6 @@ html {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -30px;
 }
 
 .section--primary .countDown-wrap > * {
