@@ -298,7 +298,13 @@ html {
   color: var(--primary);
   margin-bottom: 0;
   font-weight: 600;
-  font-size: 42px;
+  font-size: 32px;
+}
+
+@media (min-width: 600px) {
+  .section-title {
+    font-size: 42px;
+  }
 }
 
 /*=============================================
