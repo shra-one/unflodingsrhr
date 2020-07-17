@@ -432,7 +432,6 @@ html {
 .card--testimonials {
   --offset: 100px;
   margin-top: 50px;
-  overflow: hidden;
 }
 
 @media (min-width: 600px) {
