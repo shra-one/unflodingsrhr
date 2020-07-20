@@ -55,7 +55,7 @@ html {
  *
  */
 :root {
-  --primary: #EC3732;
+  --primary: #ec3732;
   --gray-darkest: #212529;
   --black: #000;
   --radiius: 16px;
@@ -73,8 +73,8 @@ html {
  *
  */
 .btn {
-  --bg: #EC3732;
-  --bgHover: #BB1611;
+  --bg: #ec3732;
+  --bgHover: #bb1611;
   border-radius: 100px;
   font-weight: normal;
 }
@@ -117,6 +117,19 @@ html {
    */
 .img-fluid.img-rounded {
   border-radius: var(--radiius);
+  margin-top: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.img-fluid.img-rounded:hover {
+  margin-top: -5px;
+  -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
 }
 
 .img-sticky {
@@ -158,6 +171,8 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 #header.sticky .navbar-brand {
@@ -317,13 +332,11 @@ html {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .card:hover {
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3) !important;
 }
 
 .card-body {
@@ -622,6 +635,33 @@ html {
   background-color: white;
 }
 
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  background-color: var(--primary);
+  line-height: 1;
+  border-radius: var(--radiius);
+  cursor: pointer;
+}
+
+.slick-arrow.slick-prev {
+  left: -16px;
+}
+
+.slick-arrow.slick-next {
+  left: auto;
+  right: -16px;
+}
+
+.slick-arrow .material-icons {
+  font-size: 48px;
+  line-height: 1;
+}
+
 /*=============================================
 =            author section            =
 =============================================*/
@@ -631,7 +671,7 @@ html {
 
 @media (min-width: 992px) {
   .section--author.section--has-offSet-image {
-    --offset-size:100px;
+    --offset-size: 100px;
     position: static;
     margin-top: calc(var(--offset-size));
     margin-bottom: calc(var(--offset-size));
@@ -647,6 +687,13 @@ html {
 .section--author img {
   position: relative;
   z-index: 1;
+  margin-top: 0;
+  -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+.section--author img:hover {
+  margin-top: 0 !important;
 }
 
 /*=============================================
@@ -723,6 +770,56 @@ Count down component            =
   font-size: 0.75rem;
   margin-bottom: 0;
   color: var(--primary);
+}
+
+/*=============================================
+=            social members            =
+=============================================*/
+.section--social-platform {
+  padding: 20px 0;
+  background-color: #f0f0f0;
+}
+
+.section--social-platform .section-title {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: normal;
+  color: var(--gray-dark);
+  margin-bottom: 20px;
+}
+
+.grid-block {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 16px;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.grid-block-item {
+  -webkit-box-shadow: 1px 0 0 #979797;
+          box-shadow: 1px 0 0 #979797;
+  padding: 12px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid-block-item img {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  margin-right: 24px;
+}
+
+.social-platform {
+  padding: 8px;
 }
 
 /*=============================================
