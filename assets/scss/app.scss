@@ -425,6 +425,7 @@ $primaryDarker: #bb1611;
 .card--testimonials {
   --offset: 100px;
   margin-top: 50px;
+  
 
   @media (min-width: 600px) {
     margin-top: var(--offset);
@@ -443,7 +444,7 @@ $primaryDarker: #bb1611;
   }
 
   blockquote {
-    max-height: 300px;
+    max-height: 200px;
     overflow-y: auto;
   }
 }
@@ -510,6 +511,7 @@ $primaryDarker: #bb1611;
   &-item {
     padding: 10px;
     outline: none;
+    display:flex !important;
     @media (min-width: 993px) {
       transform: scale(1);
       padding: 20px;
@@ -530,11 +532,13 @@ $primaryDarker: #bb1611;
     }
   }
   .slick-track {
+    display:flex;
     @media (min-width: 993px) {
       padding-bottom: 50px;
     }
   }
   .slick-list {
+    display:flex;
     padding-bottom: 50px;
     @media (max-width: 992px) {
       padding: 20px;

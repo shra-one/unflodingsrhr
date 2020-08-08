@@ -495,7 +495,7 @@ html {
 }
 
 .card--testimonials blockquote {
-  max-height: 300px;
+  max-height: 200px;
   overflow-y: auto;
 }
 
@@ -558,6 +558,9 @@ html {
 .slick-carousel-item {
   padding: 10px;
   outline: none;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -590,6 +593,12 @@ html {
   background-color: #fff;
 }
 
+.slick-carousel .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 993px) {
   .slick-carousel .slick-track {
     padding-bottom: 50px;
@@ -597,6 +606,9 @@ html {
 }
 
 .slick-carousel .slick-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 50px;
 }
 
