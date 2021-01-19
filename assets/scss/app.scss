@@ -199,13 +199,14 @@ html {
 }
 
 .btngroup {
-  display:flex;
-  .btn-readmore {
-      flex: 1 1 auto;
+  margin:-4px;
+  >.btn {
+    margin:4px;
   }
   .btn-download {
-      flex:0 0 auto;
-      margin-left:8px;
+     .material-icons{
+       margin-right:8px;
+     }
   }
 }
 /**
@@ -370,6 +371,7 @@ html {
   --maxHeight: 600px; //700px
   // max-height: var(--maxHeight);
   min-height:  var(--maxHeight);
+  height:calc(100vh - 70px);
   display:flex;
   align-items: center;
 
@@ -486,7 +488,8 @@ html {
   border-radius: var(--radiius);
   // border-radius: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition-duration: 1000ms !important;
   &:hover {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3) !important;
   }
@@ -633,6 +636,7 @@ html {
 }
 .section--info {
   position: relative;
+  padding-top: 0;
  
 }
 .svg-curve {
@@ -644,6 +648,11 @@ html {
 
 .section--video {
   background-color: #499855;
+  padding-bottom: 60px;
+  @media(min-width:992px){
+    padding-bottom: 150px;
+
+  }
 }
 /*=============================================
 =            carousel            =
@@ -712,6 +721,7 @@ html {
   }
 }
 .card--blog {
+  overflow:hidden;
   .card-img {
     @media(min-width:769px){
       position: absolute;
