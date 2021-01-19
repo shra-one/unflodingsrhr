@@ -6,6 +6,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -15,11 +16,41 @@
         <div id="app">
             <!--header starts -->
             <header id="header">
-                <nav class="navbar navbar-expand-lg navbar-dark  ">
+                <nav class="navbar navbar-expand-lg navbar-light py-lg-0 ">
                     <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="./assets/img/logo.svg" alt="">
+                        <a class="navbar-brand m-lg-2" href="#">
+                            <img src="./assets/img/logo.png" alt="">
                         </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                            <ul class="navbar-nav  ml-lg-auto mt-lg-0 mt-3">
+
+                                <li class="nav-item   ">
+                                    <a class="nav-link active" href="#">Home </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">About Us </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Database </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Blog </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Media </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Contact Us </a>
+                                </li>
+                               
+
+                            </ul>
+
+                        </div>
 
                     </div>
                 </nav>
@@ -27,428 +58,390 @@
             <!--header ends -->
 
             <!--hero starts -->
-            <section class="section hero" data-background>
-                <div class="container">
-                    <div class="hero-content">
-                        <div class="mb-3">
-                            <div class="h3 hero-subtitle">Busines Growth Seminar</div>
-                            <h1 class="hero-title">Unleash the power within virtual !</h1>
-                            <div class="hero-excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum delectus non corporis eveniet alias numquam repudiandae? Ea, repudiandae quidem?</div>
+            <div class="js-hero slick-carousel">
+                <div class="slick-carousel-item">
+                    <section class="section hero" data-background>
+                        <div class="container">
+                            <div class="hero-content">
+                                <div class="mb-3">
+                                    
+                                    <h1 class="hero-title"  data-aos="fade-up" >Unfolding SRHR we got you covered</h1>
+                                    <div class="hero-excerpt"  data-aos="fade-up" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum delectus non corporis eveniet alias numquam repudiandae? Ea, repudiandae quidem?</div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg"  data-aos="fade-up" >Contact Us</a>
+                            </div>
                         </div>
-                        <a href="#reserve" class="btn btn-primary btn-lg">Reserve my spot</a>
-                    </div>
+                        <img src="https://source.unsplash.com/1600x900/?Webinar" class="section-bg" alt="">
+                    </section>
                 </div>
-                <img src="https://source.unsplash.com/1600x900/?Webinar" class="section-bg" alt="">
-            </section>
+                <div class="slick-carousel-item">
+                    <section class="section hero" data-background>
+                        <div class="container">
+                            <div class="hero-content">
+                                <div class="mb-3">
+                                     
+                                    <h1 class="hero-title">Unfolding SRHR we got you covered</h1>
+                                    <div class="hero-excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum delectus non corporis eveniet alias numquam repudiandae? Ea, repudiandae quidem?</div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-lg">Contact Us</a>
+                            </div>
+                        </div>
+                        <img src="https://source.unsplash.com/1600x900/?Webinar2" class="section-bg" alt="">
+                    </section>
+                </div>
+
+            </div>
+         
             <!--hero ends -->
 
-            <!--section social platform starts-->
-            <section class="section section--social-platform">
+            <section class="section section--info  section--has-offSet-image">
+                <img src="./assets/img/top-white-curve.svg" class="svg-curve" alt="">
                 <div class="container">
-                    <h1 class="section-title ">JOIN OVER <b>2 MILLION RICHER MEMBERS</b> </h1>
-                    <div class="grid-block">
-                        <div class="grid-block-item">
-                            <img src="./assets/img/youtube.svg" alt="">
-                            <div class="social-platform">
-                                <div class="social-platform-counter">447,500</div>
-                                <div class="social-platform-label">Subscribers</div>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6 align-self-md-center order-2 order-md-1">
+                            <article class="article article--highlighted"     >
+                                <h6 class="text-uppercase font-weight-bold" data-aos="fade-up" data-aos-duration="1000"> Sub title heading</h6>
+                                <h3 class="article-title" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1000">Title heading focus here</h3>
+                                <div data-aos="fade-up"  data-aos-delay="600" data-aos-duration="1000">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, consectetur odit? Aperiam impedit quod eveniet quo consequatur quia odit recusandae nulla tenetur sunt culpa et totam enim, libero in praesentium.</p>
+    
+                                    <p>
+                                        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit a. Temporibus voluptates nisi ad est numquam nesciunt ratione quae.</b>
+                                    </p>
+                                    <a href="#" class="btn btn-primary btn-lg">Read more</a>
+                                </div>
+                            </article>
                         </div>
-                        <div class="grid-block-item">
-                            <img src="./assets/img/facebook.svg" alt="">
-                            <div class="social-platform">
-                                <div class="social-platform-counter">749,400</div>
-                                <div class="social-platform-label">Fans</div>
-                            </div>
-                        </div>
-                        <div class="grid-block-item">
-                            <img src="./assets/img/twitter.svg" alt="">
-                            <div class="social-platform">
-                                <div class="social-platform-counter">129,100</div>
-                                <div class="social-platform-label">Followers</div>
-                            </div>
-                        </div>
-                        <div class="grid-block-item">
-                            <img src="./assets/img/linkdin.svg" alt="">
-                            <div class="social-platform">
-                                <div class="social-platform-counter">600+</div>
-                                <div class="social-platform-label">Connections</div>
+                        <div class="col-md-6 order-1 order-md-2">
+                            <div class="offset-image" data-aos="zoom-in-up"  data-aos-delay="300" data-aos-duration="3000">
+                                <img src="https://source.unsplash.com/466x700/?human,%20potrait" alt="" class="img-fluid img-rounded">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--section social members ends-->
+
+            <section class="section section--light">
+                <img src="./assets/img/top-gray-curve.svg" class="svg-curve" alt="">
+                <div class="container">
+                    <header class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="section-title ">Latest Resourses</h1>
+                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, eos!</div>
+                    </header>
+                  
+                    <div class="row card--resources-lists">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card--resources" data-aos="fade-up" data-aos-duration="500"  data-aos-delay="300">
+                                <div class="card-body">
+                                    <figure class="card-figure">
+                                        <img src="https://source.unsplash.com/466x700/?human,%20potrait" alt="" class="card-img img-rounded">
+                                    </figure>
+                                    <h6 class="card-title">Statistical SRHR Report Nepal - 2020
+                                        </h6>
+                                        <div class="date">
+                                            <span class="material-icons"> event </span>
+                                            <time>2020-11-30</time>
+                                        </div>
+                                        <div class="btngroup">
+                                            <a href="#" class="btn btn-outline-primary btn-readmore">Read More</a>
+                                            <a href="#" class="btn btn-primary btn-download" title="Download"><span class="material-icons">
+                                                cloud_download
+                                                </span></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card--resources" data-aos="fade-up" data-aos-duration="500"  data-aos-delay="600">
+                                <div class="card-body">
+                                    <figure class="card-figure">
+                                        <img src="https://source.unsplash.com/466x700/?human,%20potrait" alt="" class="card-img img-rounded">
+                                    </figure>
+                                    <h6 class="card-title">Statistical SRHR Report Nepal - 2020
+                                        </h6>
+                                        <div class="date">
+                                            <span class="material-icons"> event </span>
+                                            <time>2020-11-30</time>
+                                        </div>
+                                        <div class="btngroup">
+                                            <a href="#" class="btn btn-outline-primary btn-readmore">Read More</a>
+                                            <a href="#" class="btn btn-primary btn-download" title="Download"><span class="material-icons">
+                                                cloud_download
+                                                </span></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card--resources" data-aos="fade-up" data-aos-duration="500"  data-aos-delay="900">
+                                <div class="card-body">
+                                    <figure class="card-figure">
+                                        <img src="https://source.unsplash.com/466x700/?human,%20potrait" alt="" class="card-img img-rounded">
+                                    </figure>
+                                    <h6 class="card-title">Statistical SRHR Report Nepal - 2020
+                                        </h6>
+                                        <div class="date">
+                                            <span class="material-icons"> event </span>
+                                            <time>2020-11-30</time>
+                                        </div>
+                                        <div class="btngroup">
+                                            <a href="#" class="btn btn-outline-primary btn-readmore">Read More</a>
+                                            <a href="#" class="btn btn-primary btn-download" title="Download"><span class="material-icons">
+                                                cloud_download
+                                                </span></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card card--resources" data-aos="fade-up" data-aos-duration="500"  data-aos-delay="1200">
+                                <div class="card-body">
+                                    <figure class="card-figure">
+                                        <img src="https://source.unsplash.com/466x700/?human,%20potrait" alt="" class="card-img img-rounded">
+                                    </figure>
+                                    <h6 class="card-title">Statistical SRHR Report Nepal - 2020
+                                        </h6>
+                                        <div class="date">
+                                            <span class="material-icons"> event </span>
+                                            <time>2020-11-30</time>
+                                        </div>
+                                        <div class="btngroup">
+                                            <a href="#" class="btn btn-outline-primary btn-readmore">Read More</a>
+                                            <a href="#" class="btn btn-primary btn-download" title="Download"><span class="material-icons">
+                                                cloud_download
+                                                </span></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5" data-aos="fade-up" data-aos-duration="500"  data-aos-delay="500">
+                        <a href="#" class="btn btn-primary btn-lg">View All</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--video ">
+                <img src="./assets/img/top-green-curve.svg" class="svg-curve" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="card-body">
+                                    <div class="mb-5">
+                                        <h5 class="card-title">Video</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-6 mt-4 mt-md-0">
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <a href="#" class="btn btn-primary">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4 mt-md-0">
+                            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                              
+                                    <div class="pt-3 px-4  ">
+                                        <h5 class="card-title">News</h5>
+                                    </div>
+                                    <article class="news">
+                                        <div class="px-4 py-3">
+                                            <h6 class="card-title"><a href="#">April COVID-19 Landscape: SRHR and Gendered Issues i</a></h6>
+                                            <div class="date mb-0">
+                                                <span class="material-icons"> event </span>
+                                                <time>2020-11-30</time>
+                                            </div>
+                                           
+                                        </div>
+                                    </article>
+                                    <article class="news">
+                                        <div class="px-4 py-3">
+                                            <h6 class="card-title"><a href="#">April COVID-19 Landscape: SRHR and Gendered Issues i</a></h6>
+                                            <div class="date mb-0">
+                                                <span class="material-icons"> event </span>
+                                                <time>2020-11-30</time>
+                                            </div>
+                                           
+                                        </div>
+                                    </article>
+                                    <article class="news">
+                                        <div class="px-4 py-3">
+                                            <h6 class="card-title"><a href="#">April COVID-19 Landscape: SRHR and Gendered Issues i</a></h6>
+                                            <div class="date mb-0">
+                                                <span class="material-icons"> event </span>
+                                                <time>2020-11-30</time>
+                                            </div>
+                                           
+                                        </div>
+                                    </article>
+                                    <div class="text-center p-3">
+                                        <a href="#" class="btn btn-primary d-flex justify-content-center">View More News</a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+ 
 
             <!--section light section cards starts -->
-            <section class="section section--light">
+            <section class="section ">
+                <img src="./assets/img/top-white-curve.svg" class="svg-curve" alt="">
                 <div class="container">
 
-                    <header class="section-header">
-                        <h2 class="section-title mb-2">What Will You Learn At The Webinar?</h2>
+                    <header class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="section-title mb-2" >Blogs</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio accusantium veritatis numquam asperiores accusamus qui rem voluptatibus pariatur explicabo officia!</p>
                     </header>
 
-                    <div class="row row-cols-1 row-cols-md-3">
-                        <div class="col mb-4">
-                            <div class="card h-100 card--hovered ">
+                 <div class="row">
+                     <div class="col-lg-6">
+                        <div class="card mb-3 card--blog" data-aos="fade-up" data-aos-duration="1000" >
+                            <div class="row no-gutters">
+                              <div class="col-md-5" >
+                                <img src="https://source.unsplash.com/466x700/?human,%20potrait" class="card-img" alt="...">
+                              </div>
+                              <div class="col-md-7">
                                 <div class="card-body">
-                                    <div class="icon">
-                                        <span class="material-icons">healing</span>
+                                  <h6 class="card-title">Mobile App in Nepal Helps Adolescents
+                                    Access Credible Information on Sexual
+                                    and Reproductive Health
+                                    </h6>
+                                    <div class="date">
+                                        <span class="material-icons"> event </span>
+                                        <time>2020-11-30</time>
                                     </div>
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                                    <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor commodi amet   
-                                    </p>
+                                  <p  >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a href="#" class="btn btn-link">Read More</a>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col mb-4">
-                            <div class="card h-100  card--hovered">
+                          </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="card mb-3 card--blog" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
+                            <div class="row no-gutters">
+                              <div class="col-md-5">
+                                <img src="https://source.unsplash.com/466x700/?human,%20potrait" class="card-img" alt="...">
+                              </div>
+                              <div class="col-md-7">
                                 <div class="card-body">
-                                    <div class="icon">
-                                        <span class="material-icons">filter_drama</span>
+                                  <h6 class="card-title">Mobile App in Nepal Helps Adolescents
+                                    Access Credible Information on Sexual
+                                    and Reproductive Health
+                                    </h6>
+                                    <div class="date">
+                                        <span class="material-icons"> event </span>
+                                        <time>2020-11-30</time>
                                     </div>
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
-                                    <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor commodi amet   
-                                    </p>
+                                  <p  >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <a href="#" class="btn btn-link">Read More</a>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col mb-4">
-                            <div class="card h-100 card--hovered">
-                                <div class="card-body">
-                                    <div class="icon">
-                                        <span class="material-icons">emoji_flags</span>
-                                    </div>
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                    <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor commodi amet   
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                          </div>
+                     </div>
+                 </div>
 
-                    </div>
-
-                    <div class="text-center mt-4">
-                        <a href="#" class="btn btn-primary btn-lg" role="button">Reserve my spot</a>
+                    <div class="text-center mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <a href="#" class="btn btn-primary btn-lg" role="button">View More</a>
                     </div>
                 </div>
             </section>
             <!--section light section cards ends -->
 
-            <!--section primary section webinaar countdown starts-->
-            <div class="webinaar-section">
-                
-                    <div class="logo-box">
-                        <img src="./assets/img/logo.svg" alt="">
-                    </div>
-              
-             
-               
-                    <section class="section section--primary">
-                       
-        
-                      <div class="webinaar-counter">
-                        <h1 class="section-title ">Webinaar will start in </h1>
-                          <div class="countDown-wrap ">
-                            <div class="countDown">
-                                <div class="countDown__block">
-                                    <div class="countDown__time" id="days">0</div>
-                                    <label for="days" class="bottom-text">Days</label>
-                                </div>
-                                <div class="countDown__block">
-                                    <div class="countDown__time" id="hours">0</div>
-                                    <label for="hours" class="bottom-text">Hours</label>
-                                </div>
-                                <div class="countDown__block">
-                                    <div class="countDown__time" id="minutes">0</div>
-                                    <label for="minutes" class="bottom-text">Minutes</label>
-                                </div>
-                                <div class="countDown__block">
-                                    <div class="countDown__time" id="seconds">0</div>
-                                    <label for="seconds" class="bottom-text">Seconds</label>
-                                </div>
+      
+            <footer id="footer" class="footer">
+                <img src="./assets/img/top-purple-curve.svg" class="svg-curve" alt="">
+                <div class="footer-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                                <aside class="widget" data-aos="fade-up" data-aos-duration="1000"  >
+                                    <h4 class="widget-title">Stay Connected</h4>
+                                    <p>Signup with your email for the Newsletter</p>
+                                    <form class="newsletter-form">
+                                        <input type="email" class="form-control" placeholder="Email here" required="">
+                                        <button class="btn btn-primary">Join</button>
+                                    </form>
+                                </aside>
                             </div>
-            
-                            <a href="#" class="btn btn-light  btn-lg">Reserve my spot</a>
-                          </div>
-                      </div>
-        
-                    </section>
-                
-                <div class="image-wrap">
-                    <img src="https://source.unsplash.com/500x320/?party" alt="" class="img-fluid">
-                </div> 
-            </div>
-            <!--section primary section webinaar countdown ends-->
-            <!--section dark section testimonails starts -->
-            <section class="section section--dark" data-background>
-                <div class="container">
-                    <header class="section-header">
-                        <h2 class="section-title text-light">Success Stories</h2>
-                    </header>
 
-                    <div class="slick-carousel js-testimonials">
-                        <div class="slick-carousel-item">
-                            <div class="card card--testimonials">
-                                <div class="card-body">
-                                    <figure class="avatar">
-                                        <div class="avatar-image">
-                                            <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <figcaption class="avatar-meta">
-                                            <h5 class="avatar-title">Serena Williams</h5>
-                                            <div class="avatar-infos">Founder, Chairman & CEO of Infotech</div>
-                                        </figcaption>
-                                    </figure>
-                                    <blockquote>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio animi architecto iusto eveniet praesentium quaerat rem eos quod vitae!
-                                       </blockquote>
-                                </div>
+                            <div class="col-12 col-xs-6 col-lg-4 mt-4 mt-lg-0">
+                                <aside class="widget" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                    <h4 class="widget-title">Unfolding SRHR</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, deserunt? A expedita saepe corrupti quas voluptatem modi praesentium distinctio unde?</p>
+                                </aside>
                             </div>
-                        </div>
-                        <div class="slick-carousel-item">
-                            <div class="card card--testimonials">
-                                <div class="card-body">
-                                    <figure class="avatar">
-                                        <div class="avatar-image">
-                                            <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <figcaption class="avatar-meta">
-                                            <h5 class="avatar-title">Serena Williams</h5>
-                                            <div class="avatar-infos">Founder, Chairman & CEO of Infotech</div>
-                                        </figcaption>
-                                    </figure>
-                                    <blockquote>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio animi architecto iusto eveniet praesentium quaerat rem eos quod vitae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio animi architecto iusto eveniet praesentium quaerat rem eos quod vitae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio animi architecto iusto eveniet praesentium quaerat rem eos quod vitae!
-                                       </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-carousel-item">
-                            <div class="card card--testimonials">
-                                <div class="card-body">
-                                    <figure class="avatar">
-                                        <div class="avatar-image">
-                                            <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <figcaption class="avatar-meta">
-                                            <h5 class="avatar-title">Serena Williams</h5>
-                                            <div class="avatar-infos">Founder, Chairman & CEO of Infotech</div>
-                                        </figcaption>
-                                    </figure>
-                                    <blockquote>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio animi architecto iusto eveniet praesentium quaerat rem eos quod vitae!
-                                       </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slick-carousel-item">
-                            <div class="card card--testimonials">
-                                <div class="card-body">
-                                    <figure class="avatar">
-                                        <div class="avatar-image">
-                                            <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="" class="img-fluid">
-                                        </div>
-                                        <figcaption class="avatar-meta">
-                                            <h5 class="avatar-title">Serena Williams</h5>
-                                            <div class="avatar-infos">Founder, Chairman & CEO of Infotech</div>
-                                        </figcaption>
-                                    </figure>
-                                    <blockquote>
-                                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio animi architecto iusto eveniet praesentium quaerat rem eos quod vitae!
-                                      </blockquote>
-                                </div>
+                            <div class="col-12 col-xs-6 col-lg-4 mt-4 mt-lg-0">
+                                <aside class="widget" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                                    <h4 class="widget-title">Quick Links</h4>
+                                    <ul class="menu">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Database</a></li>
+                                        <li><a href="#">Blogs</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">Photos</a></li>
+                                    </ul>
+                                </aside>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="https://source.unsplash.com/1600x900/?Webinar" class="section-bg" alt="">
-            </section>
-            <!--section dark section testimonails ends -->
-
-
-            <!--section light section webinaar starts -->
-            <section class="section section--light">
-                <div class="container">
-                   
-                    <div class="row pt-5">
-                        <div class="col-md-6 mb-4 mb-md-0">
-                            <img src="https://source.unsplash.com/500x320/?Webinar" alt="" class="img-fluid img-rounded img-sticky">
+                <div class="footer-bottom"  >
+                    <div class="container" data-aos="fade-down" data-aos-duration="1000"  >
+                        <div class="text-center">
+                            <ul class="list-unstyled footer-social-links ">
+                                <li>
+                                    <a href="#" title="Facbook" target="_blank">
+                                        <img src="./assets/img/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Instagram" target="_blank">
+                                        <img src="./assets/img/instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitter" target="_blank">
+                                        <img src="./assets/img/twitter.svg" alt="twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="LinkedIn" target="_blank">
+                                        <img src="./assets/img/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </li>
+                             
+                            </ul>
+                            <p>2021 © Copyright | <a href="#">Unfolding SRHR</a>. All Rights Reserved
+                            </p>
+                            <p>Made with ❤ by <a href="#">ikigai technology pvt ltd</a>.</p>
                         </div>
-                        <div class="col-md-6">
-                            <article class="article ">
-                               
-                                <h2 class="article-title">What Gave Rise To The Webinar?</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, consectetur odit? Aperiam impedit quod eveniet quo consequatur quia odit recusandae nulla tenetur sunt culpa et totam enim, libero in praesentium.</p>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, consectetur odit? Aperiam impedit quod eveniet quo consequatur quia odit recusandae nulla tenetur sunt culpa et totam enim, libero in praesentium.</p>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, consectetur odit? Aperiam impedit quod eveniet quo consequatur quia odit recusandae nulla tenetur sunt culpa et totam enim, libero in praesentium.</p>
-
-                                <p>
-                                    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit a. Temporibus voluptates nisi ad est numquam nesciunt ratione quae.</b>
-                                </p>
-                                <a href="#" class="btn btn-primary btn-lg">Reserve my spot</a>
-                            </article>
-                        </div>
-
                     </div>
                 </div>
-            </section>
+            </footer>
  
-            <!--section light section webinaar starts -->
-
-            <!--section primary section about author starts -->
-            <section class="section section--author  section--has-offSet-image">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 align-self-md-center order-2 order-md-1">
-                            <article class="article article--highlighted">
-                                <h6 class="text-uppercase font-weight-bold">About the speaker</h6>
-                                <h3 class="article-title">What Gave Rise To The Webinar?</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, consectetur odit? Aperiam impedit quod eveniet quo consequatur quia odit recusandae nulla tenetur sunt culpa et totam enim, libero in praesentium.</p>
-
-                                <p>
-                                    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit a. Temporibus voluptates nisi ad est numquam nesciunt ratione quae.</b>
-                                </p>
-                                <a href="#" class="btn btn-primary btn-lg">Reserve my spot</a>
-                            </article>
-                        </div>
-                        <div class="col-md-6 order-1 order-md-2">
-                            <div class="offset-image">
-                                <img src="https://source.unsplash.com/466x700/?human,%20potrait" alt=""  class="img-fluid img-rounded">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--section primary section about author ends -->
-
-            <!--section primary section about auther starts -->
-            <section class="section section--light">
-                <div class="container">
-                    <header class="section-header">
-                        <h1 class="section-title ">Driven by Purpose</h1>
-                        <div>40 years of helping others create success and fulfillment</div>
-                    </header>
-                    <div class="row pt-5">
-                        <div class="col-md-6 mb-4 mb-md-0">
-                            <img src="https://source.unsplash.com/500x320/?Webinar" alt=""  class="img-fluid img-rounded">
-                        </div>
-                        <div class="col-md-6">
-                            <article class="article ">
-                               
-                                <h2 class="article-title">Find the event that’s right for you</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, consectetur odit? Aperiam impedit quod eveniet quo consequatur quia odit recusandae nulla tenetur sunt culpa et totam enim, libero in praesentium.</p>
-
-                                <p>
-                                    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit a. Temporibus voluptates nisi ad est numquam nesciunt ratione quae.</b>
-                                </p>
-                                <a href="#" class="btn btn-primary btn-lg">Reserve my spot</a>
-                              
-                            </article>
-                        </div>
-
-                    </div>
-
-                    <div class="text-center mt-5">
-                        <a href="#" class="btn btn-light btn-lg">View Upcoming Webinaar</a>
-                    </div>
-                </div>
-            </section>
-            <!--section primary section about auther ends -->
-
-            <!--section dark section cta form starts -->
-            <section class="section section--dark" data-background  id="reserve">
-                <div class="container">
-                    <header class="section-header">
-                        <h1 class="section-title text-white">Driven by Purpose</h1>
-                     
-                    </header>
-                    <div class="card card--cta" >
-                     
-
-                        <form action="" class="card-body">
-                         
-                            <header class="card-header">
-                                <h3 class="card-title">Please fill up the form to reserve your spot</h3>
-                                <p>We will notify you as soon as your spot is reserved.</p>
-                            </header>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">name</label>
-                                        <input type="text" name="" id=" " placeholder="Type your full name" class="form-control" required> 
-                                    </div>
-        
-                                    <div class="form-group">
-                                        <label for="">email</label>
-                                        <input type="email" name="" placeholder="youremail@domain.com" id=" " class="form-control" required>
-                                    </div>
-        
-                                    <div class="form-group">
-                                        <label for="">phone</label>
-                                        <input type="text" name="" id=" " placeholder="Type your phone number " class="form-control" inputmode="numeric" required>
-                                    </div> 
-                                    
-                                    <div class="form-group">
-                                        <label for="">city ( Optional )</label>
-                                        <input type="text" name="" id=" "  placeholder="Type your city " class="form-control" >
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    
-                             <div class="form-group">
-                                <label for="">message ( Optional )</label>
-                                <textarea name="" id="" placeholder="If you have any message, type it here"   rows="4" class="form-control"></textarea>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</label>
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                                </div>
-    
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Toggle this custom radio</label>
-                                </div>
-    
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio3">Toggle this custom radio</label>
-                                </div>
-                            </div>
-
-                                </div>
-                            </div>
-                          
-
-                            
-
-                            <footer class="card-footer justify-content-md-center">
-                                <button type="submit" class="btn btn-primary btn-lg  ">Take me to the next Step</button>
-                            </footer>
-                        </form>
-                    </div>
-
-                </div>
-                <img src="https://source.unsplash.com/1600x900/?Webinar" class="section-bg" alt="">
-                <footer class="footer">
-                    © Copyright 2020  All right reserved | Business Growth Seminar
-                 </footer>
-            </section>
-            <!--section dark section cta form ends -->
 
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
             <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+            <script src="./assets/js/aos.js"></script>
             <script src="./assets/js/app.js"></script>
         </body>
     </html>
