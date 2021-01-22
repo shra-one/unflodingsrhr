@@ -60,7 +60,7 @@ html {
  */
 :root {
   --primary: #b40772;
-  --secondary:#662A95;
+  --secondary:#2E3192;
   --gray-darkest: #212529;
   --black: rgb(3, 3, 3);
   --radiius: 16px;
@@ -113,14 +113,14 @@ button:focus {
 }
 
 .btn-secondary {
-  background-color: #662A95;
-  border-color: #662A95;
+  background-color: #2E3192;
+  border-color: #2E3192;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary:not(:disabled):not(:disabled):active, .btn-secondary:not(:disabled):not(:disabled):active:focus {
-  background-color: #582481;
-  border-color: #8135bd;
-  box-shadow: 0 0 0 0.2rem rgba(102, 42, 149, 0.5);
+  background-color: #282a7f;
+  border-color: #3a3eb9;
+  box-shadow: 0 0 0 0.2rem rgba(46, 49, 146, 0.5);
 }
 
 .btn-outline-primary {
@@ -734,7 +734,7 @@ button:focus {
 =============================================*/
 .footer {
   margin-top: 24px;
-  background: #662A95;
+  background: #2E3192;
   position: relative;
 }
 
@@ -764,7 +764,7 @@ button:focus {
 
 .footer-bottom {
   padding: 16px;
-  background: #582481;
+  background: #282a7f;
 }
 
 .footer-bottom p:last-child {
